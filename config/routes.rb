@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'channels#index'
+  resources :channels
+  resources :shows
+  resources :show_listings
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
